@@ -10,6 +10,10 @@ import VirtualTour from "./pages/VirtualTour";
 import Archive from "./pages/Archive";
 import Map from "./pages/Map";
 import Calendar from "./pages/Calendar";
+import Community from "./pages/Community";
+import About from "./pages/About";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +33,10 @@ const App = () => (
             <Route path="/archive" element={<Archive />} />
             <Route path="/map" element={<Map />} />
             <Route path="/calendar" element={<Calendar />} />
+            <Route path="/community" element={<Community />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

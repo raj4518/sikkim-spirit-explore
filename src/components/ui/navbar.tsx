@@ -49,6 +49,9 @@ export function Navbar() {
                 {item.name}
               </Link>
             ))}
+            <Button asChild variant="outline" size="sm" className="ml-4">
+              <Link to="/signin">Sign In</Link>
+            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
