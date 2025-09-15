@@ -6,19 +6,37 @@ import { Mountain, Users, Target, Award, Heart, Globe } from "lucide-react";
 export default function About() {
   const team = [
     {
-      name: "Dr. Karma Tshering",
+      name: "Saumya Nichat",
       role: "Cultural Heritage Director",
       description: "Buddhist scholar and monastery preservation expert",
       avatar: "/placeholder.svg"
     },
     {
-      name: "Pemba Sherpa",
+      name: "Shrihari Pise",
       role: "Digital Technology Lead",
       description: "VR/AR specialist and digital preservation architect",
       avatar: "/placeholder.svg"
     },
     {
-      name: "Yangchen Dolma",
+      name: "Rajvardhan Kharat",
+      role: "Community Outreach Manager",
+      description: "Local community liaison and cultural ambassador",
+      avatar: "/placeholder.svg"
+    },
+    {
+      name: "Manish Patil",
+      role: "Community Outreach Manager",
+      description: "Local community liaison and cultural ambassador",
+      avatar: "/placeholder.svg"
+    },
+    {
+      name: "Gauri Rakhonde",
+      role: "Community Outreach Manager",
+      description: "Local community liaison and cultural ambassador",
+      avatar: "/placeholder.svg"
+    },
+    {
+      name: "Anushka Jannawar",
       role: "Community Outreach Manager",
       description: "Local community liaison and cultural ambassador",
       avatar: "/placeholder.svg"
