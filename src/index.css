@@ -141,6 +141,7 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+<<<<<<< HEAD
 
 @layer components {
   /* Video play overlay styles */
@@ -173,3 +174,5 @@ All colors MUST be HSL.
     }
   }
 }
+=======
+>>>>>>> 08231a12e0de5d2dc0ed832db2b8ebbdc0420ca9

@@ -4,7 +4,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Search, MapPin, Archive, Calendar, Users, Play, Map, BookOpen } from "lucide-react";
 import { Link } from "react-router-dom";
+<<<<<<< HEAD
 import { useState, useRef } from "react";
+=======
+>>>>>>> 08231a12e0de5d2dc0ed832db2b8ebbdc0420ca9
 import heroImage from "@/assets/hero-monastery.jpg";
 
 const quickLinks = [
@@ -46,6 +49,7 @@ const stats = [
 ];
 
 export default function Home() {
+<<<<<<< HEAD
   const videoRef = useRef<HTMLVideoElement>(null);
 
   return (
@@ -109,10 +113,17 @@ export default function Home() {
 
       {/* Single Screen Landing Page - 3 Column Layout */}
       <section className="relative h-screen flex items-center overflow-hidden">
+=======
+  return (
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+>>>>>>> 08231a12e0de5d2dc0ed832db2b8ebbdc0420ca9
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
         >
+<<<<<<< HEAD
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-black/60" />
         </div>
         
@@ -316,6 +327,94 @@ export default function Home() {
 
 
 
+=======
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60" />
+        </div>
+        
+        <div className="relative z-10 text-center max-w-4xl mx-auto px-4 animate-fade-in">
+          <Badge variant="secondary" className="mb-4 bg-saffron/20 text-saffron border-saffron/30">
+            Digital Heritage Platform
+          </Badge>
+          
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            Monastery360
+            <span className="block text-2xl md:text-3xl lg:text-4xl font-normal text-saffron mt-2">
+              Sikkim's Sacred Heritage
+            </span>
+          </h1>
+          
+          <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Explore ancient monasteries, immerse in virtual tours, and preserve Sikkim's 
+            spiritual heritage for future generations through cutting-edge digital technology.
+          </p>
+
+          {/* Search Bar */}
+          <div className="max-w-2xl mx-auto mb-8">
+            <div className="relative">
+              <Search className="absolute left-4 top-1/2 transform -translate-y-1/2 text-muted-foreground h-5 w-5" />
+              <Input
+                placeholder="Search monasteries, locations, or festivals..."
+                className="pl-12 pr-4 py-4 text-lg bg-background/95 backdrop-blur border-border/50 focus:border-saffron focus:ring-saffron/20"
+              />
+              <Button 
+                size="lg" 
+                className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gradient-monastery hover:shadow-monastery"
+              >
+                Search
+              </Button>
+            </div>
+          </div>
+
+          <Button 
+            asChild
+            size="lg" 
+            className="bg-gradient-saffron hover:shadow-gold text-saffron-foreground font-semibold px-8 py-4 text-lg"
+          >
+            <Link to="/explore">
+              Start Exploring
+            </Link>
+          </Button>
+        </div>
+      </section>
+
+      {/* Quick Links */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Discover Sacred Heritage
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Multiple pathways to explore and experience Sikkim's monastery culture
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {quickLinks.map((link, index) => (
+              <Card 
+                key={link.title} 
+                className="group hover:shadow-elevated hover:-translate-y-2 transition-all duration-300 cursor-pointer animate-scale-in"
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                <Link to={link.href}>
+                  <CardContent className="p-6 text-center">
+                    <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl ${link.color} flex items-center justify-center group-hover:animate-monastery-glow transition-all duration-300`}>
+                      <link.icon className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">
+                      {link.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm">
+                      {link.description}
+                    </p>
+                  </CardContent>
+                </Link>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+>>>>>>> 08231a12e0de5d2dc0ed832db2b8ebbdc0420ca9
 
       {/* Stats */}
       <section className="py-16 bg-gradient-monastery text-primary-foreground">
